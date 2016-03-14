@@ -1,0 +1,29 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Wikipedia(2015)]{wiki:BoochMethod}
+Wikipedia.
+\newblock Booch method --- {W}ikipedia{,} the free encyclopedia, 2015.
+\newblock URL \url{https://en.wikipedia.org/wiki/Booch_method}.
+\newblock [Online; accessed 10-March-2016].
+
+\bibitem[Wikipedia(2016{\natexlab{a}})]{wiki:CI}
+Wikipedia.
+\newblock Continuous integration --- {W}ikipedia{,} the free encyclopedia,
+  2016{\natexlab{a}}.
+\newblock URL
+  \url{https://en.wikipedia.org/wiki/Continuous_integration#cite_note-1}.
+\newblock [Online; accessed 9-March-2016].
+
+\bibitem[Wikipedia(2016{\natexlab{b}})]{wiki:VersionControl}
+Wikipedia.
+\newblock Version control --- {W}ikipedia{,} the free encyclopedia,
+  2016{\natexlab{b}}.
+\newblock URL \url{https://en.wikipedia.org/wiki/Version_control}.
+\newblock [Online; accessed 10-March-2016].
+
+\end{thebibliography}

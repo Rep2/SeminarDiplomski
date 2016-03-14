@@ -1,0 +1,13 @@
+\select@language {croatian}
+\contentsline {chapter}{\numberline {1}Uvod}{1}
+\contentsline {chapter}{\numberline {2}Kontinuirana integracija}{2}
+\contentsline {section}{\numberline {2.1}Rani razvoj}{2}
+\contentsline {section}{\numberline {2.2}Praksa}{3}
+\contentsline {subsection}{\numberline {2.2.1}Repozitori koda}{3}
+\contentsline {subsection}{\numberline {2.2.2}Automatiziranje izgradnje}{4}
+\contentsline {subsection}{\numberline {2.2.3}Dnevno spajanje s glavnom kopijom}{4}
+\contentsline {subsection}{\numberline {2.2.4}Testiranje u kopiji produkcijske okoline}{4}
+\contentsline {section}{\numberline {2.3}Nedostaci}{4}
+\contentsline {chapter}{\numberline {3}Zaklju\IeC {\v c}ak}{6}
+\contentsline {chapter}{\numberline {4}Literatura}{7}
+\contentsline {chapter}{\numberline {5}Sa\IeC {\v z}etak}{8}
