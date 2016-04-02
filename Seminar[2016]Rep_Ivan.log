@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  15 MAR 2016 02:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  2 APR 2016 10:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -621,15 +621,21 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 Poglavlje 1.
 [1
 
-]
+] [2]
 Poglavlje 2.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 45.
-[2
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 47.
+[3
 
-] [3] [4] [5] [6]
+] [4]
+Overfull \hbox (17.0069pt too wide) in paragraph at lines 72--73
+\T1/ptm/m/n/12 Ne pro-vo-že-nje kon-ti-nu-irane in-te-gra-cije je skupo, kon-ti
+-nu-irana in-te-gra-cija je jef-tina.ƒestom
+ []
+
+[5] [6] [7]
 Poglavlje 3.
-(./Seminar[2016]Rep_Ivan.bbl [7
+(./Seminar[2016]Rep_Ivan.bbl [8
 
 ]
 Poglavlje 4.
@@ -637,26 +643,79 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 11.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Underfull \hbox (badness 4467) in paragraph at lines 15--21
+Underfull \hbox (badness 1067) in paragraph at lines 9--13
+[]\T1/ptm/m/n/12 Agile Al-li-ance.  Con-ti-nu-ous de-ployment, 2016.  URL $\T1/
+pcr/m/n/12 http : / / guide .
+ []
+
+
+Underfull \hbox (badness 4060) in paragraph at lines 15--19
+[]\T1/ptm/m/n/12 ToughtWorks.  Con-ti-nu-ous in-te-gra-tion, 2016.  URL $\T1/pc
+r/m/n/12 https : / / www .
+ []
+
+
+Underfull \hbox (badness 8019) in paragraph at lines 27--32
+[]\T1/ptm/m/n/12 Wikipedia.  Con-ti-nu-ous de-li-very --- Wi-ki-pe-dia, the fre
+e en-cy-clo-pe-
+ []
+
+
+Underfull \hbox (badness 4467) in paragraph at lines 34--40
 []\T1/ptm/m/n/12 Wikipedia.  Con-ti-nu-ous in-te-gra-tion --- Wi-ki-pe-dia, the
  free en-cy-clo-pe-
  []
 
-) [8
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--54
+[]\T1/ptm/m/n/12 DevOps.com Ye-gor Bu-gayenko.  Why con-ti-nu-ous in-te-gra-tio
+n do-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--54
+\T1/ptm/m/n/12 esn't work, 2014.  URL $\T1/pcr/m/n/12 http : / / devops . com /
+ 2014 / 09 / 26 /
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 49--54
+\T1/pcr/m/n/12 continuous-[]integration-[]doesnt-[]work/$\T1/ptm/m/n/12 .  [Onl
+ine; ac-ce-ssed 11-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--61
+[]\T1/ptm/m/n/12 Yegor256.  Con-ti-nu-ous in-te-gra-tion is dead, 2014.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--61
+\T1/ptm/m/n/12 URL $\T1/pcr/m/n/12 http : / / www . yegor256 . com / 2014 / 10 
+/ 08 /
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 56--61
+\T1/pcr/m/n/12 continuous-[]integration-[]is-[]dead . html$\T1/ptm/m/n/12 .  [O
+nline; ac-ce-ssed 11-
+ []
+
+) [9
 
 ]
 Poglavlje 5.
-[9
+[10
 
 ] (./Seminar[2016]Rep_Ivan.aux) ) 
 Here is how much of TeX's memory you used:
- 5811 strings out of 493089
- 81515 string characters out of 6134842
- 156895 words of memory out of 5000000
- 9157 multiletter control sequences out of 15000+600000
+ 5826 strings out of 493089
+ 81773 string characters out of 6134842
+ 158043 words of memory out of 5000000
+ 9172 multiletter control sequences out of 15000+600000
  53379 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,6n,40p,703b,282s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,6n,40p,837b,298s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/
 dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/urw/courier/u
 crr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.p
@@ -665,10 +724,10 @@ r/local/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/loca
 l/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf
 -dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Seminar[2016]Rep_Ivan.pdf (11 pages, 87594 bytes).
+Output written on Seminar[2016]Rep_Ivan.pdf (12 pages, 92736 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+ 72 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

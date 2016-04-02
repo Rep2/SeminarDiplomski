@@ -1,9 +1,21 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{8}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Alliance(2016)]{aa:CDep}
+Agile Alliance.
+\newblock Continuous deployment, 2016.
+\newblock URL \url{http://guide.agilealliance.org/guide/cd.html}.
+\newblock [Online; accessed 2-April-2016].
+
+\bibitem[ToughtWorks(2016)]{tw:CI}
+ToughtWorks.
+\newblock Continuous integration, 2016.
+\newblock URL \url{https://www.thoughtworks.com/continuous-integration}.
+\newblock [Online; accessed 8-March-2016].
 
 \bibitem[Wikipedia(2015)]{wiki:BoochMethod}
 Wikipedia.
@@ -11,19 +23,40 @@ Wikipedia.
 \newblock URL \url{https://en.wikipedia.org/wiki/Booch_method}.
 \newblock [Online; accessed 10-March-2016].
 
-\bibitem[Wikipedia(2016{\natexlab{a}})]{wiki:CI}
+\bibitem[Wikipedia(2016{\natexlab{a}})]{wiki:CD}
+Wikipedia.
+\newblock Continuous delivery --- {W}ikipedia{,} the free encyclopedia,
+  2016{\natexlab{a}}.
+\newblock URL \url{https://en.wikipedia.org/wiki/Continuous_delivery}.
+\newblock [Online; accessed 2-April-2016].
+
+\bibitem[Wikipedia(2016{\natexlab{b}})]{wiki:CI}
 Wikipedia.
 \newblock Continuous integration --- {W}ikipedia{,} the free encyclopedia,
-  2016{\natexlab{a}}.
+  2016{\natexlab{b}}.
 \newblock URL
   \url{https://en.wikipedia.org/wiki/Continuous_integration#cite_note-1}.
 \newblock [Online; accessed 9-March-2016].
 
-\bibitem[Wikipedia(2016{\natexlab{b}})]{wiki:VersionControl}
+\bibitem[Wikipedia(2016{\natexlab{c}})]{wiki:VersionControl}
 Wikipedia.
 \newblock Version control --- {W}ikipedia{,} the free encyclopedia,
-  2016{\natexlab{b}}.
+  2016{\natexlab{c}}.
 \newblock URL \url{https://en.wikipedia.org/wiki/Version_control}.
 \newblock [Online; accessed 10-March-2016].
+
+\bibitem[Yegor~Bugayenko(2014)]{web:CIDoesNotWork}
+DevOps.com Yegor~Bugayenko.
+\newblock Why continuous integration doesn’t work, 2014.
+\newblock URL
+  \url{http://devops.com/2014/09/26/continuous-integration-doesnt-work/}.
+\newblock [Online; accessed 11-March-2016].
+
+\bibitem[Yegor256(2014)]{web:CIDead}
+Yegor256.
+\newblock Continuous integration is dead, 2014.
+\newblock URL
+  \url{http://www.yegor256.com/2014/10/08/continuous-integration-is-dead.html}.
+\newblock [Online; accessed 11-March-2016].
 
 \end{thebibliography}

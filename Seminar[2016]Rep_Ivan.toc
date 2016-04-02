@@ -1,14 +1,16 @@
 \select@language {croatian}
-\contentsline {chapter}{\numberline {1}Uvod TODO}{1}
-\contentsline {chapter}{\numberline {2}Kontinuirana integracija}{2}
-\contentsline {section}{\numberline {2.1}Provjera ispravnosti}{2}
-\contentsline {section}{\numberline {2.2}Kada i gdje provoditi integraciju}{3}
-\contentsline {section}{\numberline {2.3}Praksa}{4}
-\contentsline {subsection}{\numberline {2.3.1}Repozitori koda}{5}
-\contentsline {subsection}{\numberline {2.3.2}Automatiziranje izgradnje}{5}
-\contentsline {subsection}{\numberline {2.3.3}Dnevno spajanje s glavnom kopijom}{5}
-\contentsline {subsection}{\numberline {2.3.4}Testiranje u kopiji produkcijske okoline}{5}
-\contentsline {section}{\numberline {2.4}Nedostaci}{6}
-\contentsline {chapter}{\numberline {3}Zaklju\IeC {\v c}ak}{7}
-\contentsline {chapter}{\numberline {4}Literatura}{8}
-\contentsline {chapter}{\numberline {5}Sa\IeC {\v z}etak}{9}
+\contentsline {chapter}{\numberline {1}Uvod TODO drugi dio}{1}
+\contentsline {chapter}{\numberline {2}Kontinuirana integracija}{3}
+\contentsline {section}{\numberline {2.1}Provjera ispravnosti}{3}
+\contentsline {section}{\numberline {2.2}Kada i gdje provoditi integraciju}{4}
+\contentsline {section}{\numberline {2.3}Praksa}{5}
+\contentsline {subsection}{\numberline {2.3.1}Jedan repozitorij koda}{5}
+\contentsline {subsection}{\numberline {2.3.2}Automatiziranje izgradnje i provjera ispravnosti}{6}
+\contentsline {subsection}{\numberline {2.3.3}Integracijski poslu\IeC {\v z}itelj}{6}
+\contentsline {subsection}{\numberline {2.3.4}Testiranje u kopiji produkcijske okoline}{6}
+\contentsline {subsection}{\numberline {2.3.5}Jednostavan pregled rezultata}{6}
+\contentsline {subsection}{\numberline {2.3.6}Odbijanje neispravnih integracija}{7}
+\contentsline {section}{\numberline {2.4}Nedostaci}{7}
+\contentsline {chapter}{\numberline {3}Zaklju\IeC {\v c}ak}{8}
+\contentsline {chapter}{\numberline {4}Literatura}{9}
+\contentsline {chapter}{\numberline {5}Sa\IeC {\v z}etak}{10}

@@ -22,19 +22,21 @@
 
 \tableofcontents
 
-\chapter{Uvod TODO}
-Kontinuirana dostava \eng{continuous delivery} je, u sklopu programskog inženjerstva, pristup razvoju programske potpore koji nastoji smanjiti vrijeme od razvoja do produkcije programske potpore. Timovi proizvode programsku potporu u kratkim ciklusima, istovremeno osiguravajući ispravnost u bilo kom trenutku. Programska potpora se gradi i unaprjeđuje inkrementalno čime se nastoji smanjiti trošak, trajanje i rizik razvoja istovremeno povećavajući kvalitetu istog.
+\chapter{Uvod TODO drugi dio}
+Kontinuirana integracija \eng{Continuous Integration (CI)} je, u sklopu softverskog inženjerstva, pristup razvoju programske potpore u kome se radne kopije integriraju s glavnom kopijom nekoliko puta dnevno. Rijetko integriranje promjena dovodi do spajanja velike količine različitog koda i pojave integracijskih pogrešaka koje je prije spajanja potrebno otkloniti. Broj integracijskih pogrešaka može postati toliko velik da je vrijeme potrebno za njihovo ispravljanje duže od vremena utrošenog na razvoj. Kontinuirana integracija otklanja ovaj problem i značajno olakšava proces razvoja programske podrške\citep{wiki:CI}.
 
-Kontinuirana isporuka \eng{continuous deployment} nadalje svaku ispravnu promjenu automatski isporučuje u produkciju. Promjene se često označavaju dodatnim tagovima koje određuju koja će skupina korisnika vidjeti promjenu. Ovaj pristup dodatno poboljšava i ubrzava razvoj.
+Iako je praksa kontinuirane integracije široko prihvaćena na tržištu, ne postoji standard njezine implementacije. Tako se implementacije kontinuirane integracije oslanjaju na listu najboljih praksi koje su se istakle kroz godine korištenja. Cilj ovog rada je, istraživanjem stvarnog korištenja kontinuirane integracije, prepoznati navedene najbolje prakse, kategorizirati ih te ih implementirati u stvarnom sustavu. Sustav će biti optimiziran za razvoja programske potpore za mobilne operacijske sustave. Konačan će sustav uz minimalan trud omogućiti korištenje modernog i potpunog sustava kontinuirane integracije.
 
-Kontinuirana integracija \eng{Continuous Integration (CI)} je pristup razvoju programske potpore u kom se različite radne kopije učestalo spajaju s glavnom kopijom. Ovaj pristup značajno olakšava razvoj izbjegavajući spajanje velike količine koda. Ovaj pristup nije nužan za kontinuiranu dostavu i isporuku, ali je gotovo uvijek prisutan.
+Uz kontinuiranu integraciju se često spominju i dvije novije prakse. Kontinuirana dostava i kontinuirana isporuka.
 
-Kontinuirana integracija, dostava i isporuka su široko prihvaćeni pristupi u razvoju programske potpore standardnih sustava. Ovaj će se rad osvrnuti na navedene pristupe i dodatno promotriti njihovu implikaciju na mobilne operacijske sustave.
+Kontinuirana dostava \eng{continuous delivery} je, u sklopu programskog inženjerstva, pristup razvoju programske potpore koji nastoji smanjiti vrijeme koje je potrebno za prebacivanje promjena u produkciju. Timovi proizvode programsku potporu u kratkim ciklusima, istovremeno osiguravajući ispravnost glavne kopije u bilo kom trenutku. Programska potpora se gradi i unaprjeđuje inkrementalno čime se nastoji smanjiti trošak, trajanje i rizik razvoja istovremeno povećavajući kvalitetu istog\citep{wiki:CD}.
 
-Ovaj je rad podijeljen u 4(TODO) dijela. Prvi se dio bavi kontinuiranom integracijom i njezinim trenutnim implementacijama.
+Kontinuirana isporuka \eng{continuous deployment} nadalje svaku ispravnu izmjenu glavne kopije automatski isporučuje korisnicima. Korisnici sustava su podijeljeni u nekoliko razina s obzirom na njihovu funkciju. Promjene se označavaju oznakama koje određuju koja će skupina korisnika vidjeti promjenu\citep{aa:CDep}.
+
+Kontinuirana dostava i isporuka nisu toliko široko prihvaćene prakse kao kontinuirana integracija. Međutim, brojni značajni aktori u svijetu razvoja programske potpore zagovaraju i istiću brojne pozitivne strane navedenih praksi. Zbog toga će drugi dio rada proučiti navedene prakse te ih implementirati u prije ostvarenom sustavu.
 
 \chapter{Kontinuirana integracija}
-Kontinuirana integracija je praksa u programskom inženjerstvu spajanja svih radnih kopija koda s glavnom kopijom nekoliko puta dnevno. Termin je prvi put predložio i iskoristio Grady Booch 1991. godine tijekom opisa metode danas poznate kao Boochova metoda \eng{Booch method}\citep{wiki:BoochMethod}. Kasnije praksu nasljeđuje ekstremno programiranje \eng{eXtreme Programming (XP)} koje dodatno potiče praksu integracije nekoliko puta dnevno\citep{wiki:CI}.
+Kontinuirana integracija je praksa u programskom inženjerstvu spajanja svih radnih kopija koda s glavnom kopijom nekoliko puta dnevno. Termin je prvi put predložio i iskoristio Grady Booch 1991. godine tijekom opisa metode danas poznate kao Boochova metoda \eng{Booch method}\citep{wiki:BoochMethod}. Kasnije praksu nasljeđuje ekstremno programiranje \eng{eXtreme Programming (XP)} koje dodatno potiče praksu integracije nekoliko puta dnevno.
 
 Cilj kontinuirane integracije je izbjegavanje problema poznatog pod popularnim nazivom "pakao integracije" \eng{integration hell}. Programer preuzima zajedničku \eng{master} kopiju trenutačnog koda \eng{code base}, nad kojom zatim obavlja promjene. Kako vrijeme prolazi, ne samo da se njegov kod mijenja, već se mijenja i zajednička kopija. Čim je duže programerova kopija \eng{branch} izdvojena, to je veća vjerojatnost pojave konflikata pri spajanju kopija. Programer u takvom slučaju prije spajanja kopija mora prvo preuzeti glavnu kopiju, otkloniti konflikte koje prouzrokuje njegov kod, te kod dodati u glavnu kopiju.
 
@@ -49,9 +51,7 @@ Osnovni oblik provjere ispravnosti integracije je provjera ispravne izgradnje ko
 
 Zbog toga se od prve pojave kontinuirane integracije u okviru ekstremnog programiranje u proces uključuje i automatizirano testiranje koda. Nad svakom se integracijom pokreću svi testovi te se bilježi njihova prolaznost. Integracija se smatra ispravnom samo ako su svi testovi ispravno izvršeni. Ova praksa dodatno osigurava ispravnost radne kopije, te, ako je izrada testova ispravno obavljena, sprječava narušavanje ispravnosti postojećeg koda.
 
-Ubrzo se pokazalo korisnim u ovoj fazi provoditi i općenitu kontrolu kakvoću \eng{quality control}, u što ubrajamo mjerenje pokrivenosti koda i sukladnosti sa standardom, mjerenje performansi, pa čak i automatsko kreiranje dokumentacije iz koda. Umjesto provođenja kontrole kakvoće nakon završetka implementacije, provjera se provodi kontinuirano. Ovaj način implementacije kontrole kakvoće poboljšava kvalitetu programske potpore i smanjuje vrijeme potrebno za isporuku osiguravajući maksimalnu ispravnost glavne kopije.
-
-TODO: zaokružiti, istražiti što još kompanije ubrajaju pod CI i ostvariti poveznicu na CD
+Pokazalo korisnim u ovoj fazi provoditi i općenitu kontrolu kakvoću \eng{quality control}, u što ubrajamo mjerenje pokrivenosti koda i sukladnosti sa standardom, mjerenje performansi, pa čak i automatsko kreiranje dokumentacije iz koda. Umjesto provođenja kontrole kakvoće nakon završetka implementacije, provjera se provodi kontinuirano. Ovaj način implementacije kontrole kakvoće poboljšava kvalitetu programske potpore i smanjuje vrijeme potrebno za isporuku osiguravajući maksimalnu ispravnost glavne kopije.
 
 \section{Kada i gdje provoditi integraciju}
 U praksi su prisutna dva različita načina implementacije kontinuirane integracije s obzirom na trenutak obavljanja provjera ispravnosti. Implementacije kontinuirane integracije tako dijelimo na trenutnu i odgođenu integraciju.
@@ -69,31 +69,29 @@ S obzirom na mjesto provođenja integracije, implementaciju kontinuirane integra
 Lokalna integracije se pokazala vremenski zahtjevnom te vrlo podložnom ljudskoj pogrešci. Zbog toga je ona danas vrlo rijetak te se prvenstveno koristi u slučajevima kada programska podrška ne omogućava željenu funkcionalnost. S vremenom su poboljšanja počela uključivati koncept integracijskih poslužitelja \eng{build server} koja samostalno obavljaju proces integracije te po završetku dostavljaju i omogućuju pregled rezultata procesa. Danas je ovaj pristup, uz visoku razinu automatizacije, puno popularniji.
 
 \section{Praksa}
-Godine prakse su proizvele najbolju praksu koju je korisno sljediti.
+Ne provođenje kontinuirane integracije je skupo, kontinuirana integracija je jeftina.Čestom integracijom pogreške se odmah otkrivaju te se smanjuje vrijeme uloženo u otkrivanje izvora pogreške. 
 
-Kontinuirana integracija, odnosno čin integrcije radne kopije s glavnom kopijom, se treba odvijati dovoljno učestalo da se greške ne pojavljuju bez programerovog znanja i da ih on može odmah ispraviti. Normalna praksa je pokrenuti proces izgradnje nakon svakog spajanja, a ne nakon određenog intervala. Većina alata pruža ovu opciju.
+Kontinuirana integracija je široko prihvaćena praksa uspješno implementirana u mnogobrojnim projektima. Ovo se poglavlje bavi najboljim praksama usvojenim kroz godine razvoja te nedoumicama koje još uvijek postoje.
 
-Sljedeći važan faktor je alat za verzioniranje koji podržava atomična spajanja \eng{atomic commits}. Niz promjena u skopu radne kopije se smatraju jednom operacijom spajanja.
+\subsection{Jedan repozitorij koda}
+Održavanje jednog repozitorija koda je ne samo jednostavnije, nego daje i bolje rezultate. Važno je repozitorij uvijek održati ispravnim i izgradivim. Drugim riječima, potrebno je omogućiti da se preuzimanjem svježe kopije repozitorija sustav može jednostavno izgraditi. Dodatno, stavlja naglasak na minimalno korištenje račvanja \eng{branching} repozitorija. Promjene je bolje integrirati nego stvoriti više verzija repozitorija koje je zatim potrebno odvojeno održavati\citep{tw:CI}. Pojava potrebe za račvanjem najčešće upućuje na spori proces distribucije novih funkcionalnosti koji se nadalje pokušava riješiti kontinuiranom dostavom.
 
-Kako bi postigli ova svojsta većina se implementacija kontinuirane integracije oslanja na sljedeća svojstva.
+\subsection{Automatiziranje izgradnje i provjera ispravnosti}
+Automatiziranje procesa kontinuirane integracije smanjuje ukupnu količinu potrebnog posla te poboljšava kvalitetu integracije. Automatizacija uključuje automatizaciju procesa spajanja, izgradnje, provjere ispravnosti i izvještavanja. Cilj je cijeli proces integracije moći pokrenuti korištenjem jedne naredbe.  Automatizacija iziskuje ulaganje određenog truda. Zbog toga je korisno na manjim projektima odrediti i utvrditi proces kontinuirane integracije, te ga zatim automatizirati. Drugim riječima, iz lokalne i odgođene integracije, s vremenom prijeći na poslužiteljsku i trenutnu integraciju.
 
-\subsection{Repozitori koda}
-Sistem za konrolu verzija \eng{version control system} značajno olakšava razvoj programske potpore. Grupirajući sve artefakte koji su dio programske potpore, održavanje, djeljenje i izmjena koda postaju puno jednostavniji\citep{wiki:VersionControl}. CI dodatno zahtjeva da su u repozitorij ukljućeni svi artefakti potrebni za izradnju, te da je sustav izgradiv iz svježe glavne kopije. Dodatno, stavlja naglasak na minimalno korištenje račvanja \eng{branching} kad je ono dostupno. Smatra se boljim promjene itegrirati, nego održavati više verzija programske potpore istodobno.
+Vrlo je važno proces provjere ispravnosti održati brzim. Problem koji se često javlja u praktičnoj primjeni kontinuirane integracije je odgođeno ispravljanje pogrešaka otkrivenih u procesu kontinuirane integracije. Razlog tome je spor proces provjere zbog kog programer koji je započe integraciju često ne čeka završetak procesa. Zbog toga se eventualne pogreške otklanjaju kasno te se degradira cijeli proces.
 
-\subsection{Automatiziranje izgradnje}
-Važno je automatizirati izgradnju. Sustav treba moći izgraditi korištenjem jedne komande. Danas na tržištu postoje brojni alati koji omogućuju automatizaciju izgradnje te su oni neizostavni u sklopu CI-a.
-
-Nakon izgradnje potrebno je provesti sve testove kako bi se osiguralo da novi kod nije ugrozio ispravnost postojećeg. Zbog toga se uz automatizaciju izgradnje automatski provodi i testiranje. 
-
-Trajanje ovog procesa je potrebno što više ubrzati kako bi programer odmah dobio potrebne podatke. Što duže programer ćeka rezultate izgradnje i testiranja, to postoji veća šansa da na probleme neće odmah reagirati.
-
-\subsection{Dnevno spajanje s glavnom kopijom}
-Od svih uključenih u proces izgradnje se očekuje najmanje dnevno spajanje radne verzije s glavnom kopijom. Ovaj zahtjev se nalazi u suštini CI-a, ali ga je vrlo važno konstanto održavati. 
-
-Svako od spajanje je zatim potrebno izgraditi kako bi se osiguro integritet kopije.
+\subsection{Integracijski poslužitelj}
+Korištenjem integracijskog poslužitelja, provođenje integracije se s lokalnog okruženja prenosi na poslužitelj. Sve se izgradnje i testiranja provode u istoj, lako prilagodljivoj okolini. Integracijski poslužitelji, slično kao i automatiziranje, olakšavaju proces integracije. Jednako tako, i pokretanje integracijskih poslužitelja zahtjeva ulaganje određenog truda. Ovdje proces olakšavaju brojni alati na koje ćemo se osvrnuti u sljedećem poglavlju.
 
 \subsection{Testiranje u kopiji produkcijske okoline}
-Testna okolina \eng{test environment} je okolina ostvarena prvenstvno za testiranje, za razliku od produkcijske okoline koja je namjenjena za produkciju aplikacije. U praksi se ovo okoline često razlikuju. Čak i ako počnu vrlo slične, s vremenom bez potrebnog nadrzora divergiraju. Zbog navedenog, izgradnja i testiranje u testnoj okolini može dati krive ili nepotpune rezultate. Rezultat je nepotpuna evalucaija dobivenog rješenja te komplikacije prilikom prelaska u produkciju. Zbog toga testna okolina treba biti skalirana replika produkcijske okoline. Ovdje se posebno korisnim pokazuju servisi za virtualizaciju koji ostvaruju ujednačenost okolina.
+Testna okolina \eng{test environment} i produkcijska okolina se u praksi često značajno razlikuju. Čak i ako one počnu vrlo slične, s vremenom bez potrebnog nadzora divergiraju. Zbog navedenog, izgradnja i testiranje u testnoj okolini može dati krive ili nepotpune rezultate te prelazak u produkciju zahtjeva značajan napor. Zbog navedenog testna okolina treba biti skalirana replika produkcijske okoline. 
+
+\subsection{Jednostavan pregled rezultata}
+Rezultati integracija trebaju biti javni i lako dohvatljivi. Održavanje najvišeg stupnja kvalitete treba ući u kulturu kompanije te treba postati nešto čime su zaposlenici ponosni. Ovdje je dostupnost rezultata integracije vrlo važna.
+
+\subsection{Odbijanje neispravnih integracija}
+Trenutno se u praksi spajanje radne kopije s glavnom obavlja čak i ako neki od testova nisi ispravno izvršeni. U takvom slučaju programer je zadužen za što brže popravljane nastalih grešaka. Drugim riječima, programer je zadužen za održavanje ispravnosti radne kopije. Timovi se obično u početku razvoja dobro nose s ovom činjenicom te pogreške ažurno ispravljaju. Međutim, opterećeni drugim zadacima višeg prioriteta, tim postupno zanemarije  neispravne testove te se fokusira na ispunjavanje rokova\citep{web:CIDoesNotWork}. Navedeno značajno degradira kvalitetu produkta te u konačnici rezultira većom količinom potrebnog posla. Rješenje ovog problema je odbijanje integracija koje uzrokuju neispravan prilazak čak i jednog testa, bez iznimaka\citep{web:CIDead}.
 
 \section{Nedostaci}
 Razvoj okruženja koje podržava kontinuiranu integraciju može zahtjevati izvjesnu količinu posla. Posebno su osjetljivi sustavi i timovi već definirane strukture i načina rada. Promjena ustaljenog načina rada zahtjeva određeni napor. Ovdje iskisniji inežnjeri predlažu postepenu implementaciju, počevši s manjim, fleksibilnijim timom i postupnim proširenjem na ostale djelove. Problemi se rješavaju kako se na njih nalilazi. Čest je i otpor prema promjeni očekivanog ponašanja zaposlenika, ali naglašavanjem pozitivnih strana promjene moguće je doći do željenih razultata.
