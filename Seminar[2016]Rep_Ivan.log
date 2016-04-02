@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  2 APR 2016 10:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  2 APR 2016 13:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -467,22 +467,44 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count111
 \@thisrulewidth=\dimen144
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/easylist/easylist.sty
+Package: easylist 2014/01/11 v.1.4 Numbered items with a single command.
+\el@CounterTotal=\count112
+\el@Scratch=\count113
+\el@ControlCounter=\count114
+\el@CounterLevel=\count115
+\c@List1=\count116
+\c@List2=\count117
+\c@List3=\count118
+\c@List4=\count119
+\c@List5=\count120
+\c@List6=\count121
+\c@List7=\count122
+\c@List8=\count123
+\c@List9=\count124
+\c@List10=\count125
+\el@ProgressiveDimension=\dimen145
+\el@CounterBox=\box29
+\el@ControlBox=\box30
+\el@TotalMargin=\dimen146
+\el@LeftMove=\dimen147
+)
 (./Seminar[2016]Rep_Ivan.aux)
 \openout1 = `Seminar[2016]Rep_Ivan.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 7.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 8.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -523,16 +545,16 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count112
-\scratchdimen=\dimen145
-\scratchbox=\box29
-\nofMPsegments=\count113
-\nofMParguments=\count114
+\scratchcounter=\count126
+\scratchdimen=\dimen148
+\scratchbox=\box31
+\nofMPsegments=\count127
+\nofMParguments=\count128
 \everyMPshowfont=\toks25
-\MPscratchCnt=\count115
-\MPscratchDim=\dimen146
-\MPnumerator=\count116
-\makeMPintoPDFobject=\count117
+\MPscratchCnt=\count129
+\MPscratchDim=\dimen149
+\MPnumerator=\count130
+\makeMPintoPDFobject=\count131
 \everyMPtoPDFconversion=\toks26
 ) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -580,31 +602,31 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 21.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 22.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 21.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 21.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 21.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 21.
-LaTeX Font Info:    Try loading font information for U+msa on input line 21.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 22.
+LaTeX Font Info:    Try loading font information for U+msa on input line 22.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 21.
+LaTeX Font Info:    Try loading font information for U+msb on input line 22.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <14.4> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 21.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 22.
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
@@ -624,21 +646,36 @@ Poglavlje 1.
 ] [2]
 Poglavlje 2.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 47.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 48.
 [3
 
 ] [4]
-Overfull \hbox (17.0069pt too wide) in paragraph at lines 72--73
+Overfull \hbox (17.0069pt too wide) in paragraph at lines 73--74
 \T1/ptm/m/n/12 Ne pro-vo-že-nje kon-ti-nu-irane in-te-gra-cije je skupo, kon-ti
 -nu-irana in-te-gra-cija je jef-tina.ƒestom
  []
 
 [5] [6] [7]
 Poglavlje 3.
-(./Seminar[2016]Rep_Ivan.bbl [8
+
+Package natbib Warning: Citation `apple:XcodeServer' on page 8 undefined on inp
+ut line 107.
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 113.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 113.
+ [8
 
 ]
 Poglavlje 4.
+(./Seminar[2016]Rep_Ivan.bbl [9
+
+]
+Poglavlje 5.
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 11.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -701,33 +738,37 @@ Underfull \hbox (badness 2005) in paragraph at lines 56--61
 nline; ac-ce-ssed 11-
  []
 
-) [9
+) [10
 
 ]
-Poglavlje 5.
-[10
+Poglavlje 6.
+
+Package natbib Warning: There were undefined citations.
+
+[11
 
 ] (./Seminar[2016]Rep_Ivan.aux) ) 
 Here is how much of TeX's memory you used:
- 5826 strings out of 493089
- 81773 string characters out of 6134842
- 158043 words of memory out of 5000000
- 9172 multiletter control sequences out of 15000+600000
- 53379 words of font info for 73 fonts, out of 8000000 for 9000
+ 6221 strings out of 493089
+ 85963 string characters out of 6134842
+ 165787 words of memory out of 5000000
+ 9559 multiletter control sequences out of 15000+600000
+ 53739 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,6n,40p,837b,298s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/
-dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/urw/courier/u
-crr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.p
-fb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Seminar[2016]Rep_Ivan.pdf (12 pages, 92736 bytes).
+dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/courier/uc
+rr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pf
+b></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Seminar[2016]Rep_Ivan.pdf (13 pages, 102581 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
+ 80 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

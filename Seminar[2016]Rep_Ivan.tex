@@ -1,6 +1,7 @@
 \documentclass[times, utf8, seminar, numeric]{fer}
 \usepackage{booktabs}
 \usepackage{url}
+\usepackage[ampersand]{easylist}
 
 \newcommand{\eng}[1]{(engl. \textit{#1})}
 
@@ -25,7 +26,7 @@
 \chapter{Uvod TODO drugi dio}
 Kontinuirana integracija \eng{Continuous Integration (CI)} je, u sklopu softverskog inženjerstva, pristup razvoju programske potpore u kome se radne kopije integriraju s glavnom kopijom nekoliko puta dnevno. Rijetko integriranje promjena dovodi do spajanja velike količine različitog koda i pojave integracijskih pogrešaka koje je prije spajanja potrebno otkloniti. Broj integracijskih pogrešaka može postati toliko velik da je vrijeme potrebno za njihovo ispravljanje duže od vremena utrošenog na razvoj. Kontinuirana integracija otklanja ovaj problem i značajno olakšava proces razvoja programske podrške\citep{wiki:CI}.
 
-Iako je praksa kontinuirane integracije široko prihvaćena na tržištu, ne postoji standard njezine implementacije. Tako se implementacije kontinuirane integracije oslanjaju na listu najboljih praksi koje su se istakle kroz godine korištenja. Cilj ovog rada je, istraživanjem stvarnog korištenja kontinuirane integracije, prepoznati navedene najbolje prakse, kategorizirati ih te ih implementirati u stvarnom sustavu. Sustav će biti optimiziran za razvoja programske potpore za mobilne operacijske sustave. Konačan će sustav uz minimalan trud omogućiti korištenje modernog i potpunog sustava kontinuirane integracije.
+Iako je praksa kontinuirane integracije široko prihvaćena na tržištu, ne postoji standard njezine implementacije. Tako se implementacije kontinuirane integracije oslanjaju na listu najboljih praksi koje su se istakle kroz godine korištenja. Cilj ovog rada je, istraživanjem stvarnog korištenja kontinuirane integracije, prepoznati navedene najbolje prakse, kategorizirati ih i prema njima pokušati pronaći najbolju implementaciju kontinuirane integracije. Sustav će biti optimiziran za razvoja programske potpore za mobilne operacijske sustave. Konačan će sustav uz minimalan trud omogućiti korištenje modernog i potpunog sustava kontinuirane integracije.
 
 Uz kontinuiranu integraciju se često spominju i dvije novije prakse. Kontinuirana dostava i kontinuirana isporuka.
 
@@ -97,6 +98,31 @@ Trenutno se u praksi spajanje radne kopije s glavnom obavlja čak i ako neki od 
 Razvoj okruženja koje podržava kontinuiranu integraciju može zahtjevati izvjesnu količinu posla. Posebno su osjetljivi sustavi i timovi već definirane strukture i načina rada. Promjena ustaljenog načina rada zahtjeva određeni napor. Ovdje iskisniji inežnjeri predlažu postepenu implementaciju, počevši s manjim, fleksibilnijim timom i postupnim proširenjem na ostale djelove. Problemi se rješavaju kako se na njih nalilazi. Čest je i otpor prema promjeni očekivanog ponašanja zaposlenika, ali naglašavanjem pozitivnih strana promjene moguće je doći do željenih razultata.
 
 Implementaciju kontinuirane integracije značajno olakšavaju brojni komercijalni "off-the-shelf" alati. Osvrnimo se na neke TODOOOO
+
+
+\chapter{Implementacije}
+Na tržištu je dostupan broj više ili manje prilagodljivih sustava koji implementiraju ili omogućuju jednostavnu implementaciju kontinuirane integracije. Ovo će poglavlje dati pregled te usporediti mogućnosti i karakteristike danih alata.
+
+\section{Xcode Server}
+Xcode Server omogućava vrlo jednostavnu kontinuiranu integraciju za korisnike programskog alata Xcode, odnosno za razvoj aplikacija za iOS i OS X operacijske sustave. Xcode Server je kombinacija dva alata, Xcodea, alata za razvoj iOS i OS X aplikacija, te OS X Servera. Xcode Server omogućava automatiziranu integraciju, izgradnju, testiranje, analizu i arhiviranje aplikacija. Također omogućava automatsku dojavu rezultata i generiranje statistika za velik broj parametara\citep{apple:XcodeServer}.
+
+Xcode Server, Appleov alat za kontinuiranu intregacijuje, je po mnogima najbolji sistem za kontinuiranu integraciju iOS i OS X aplikacija. Xcode Server je razvijan uz Xcode. Za razliku od ostalih alata, sve su nove funkcionalnosti potrebne za integraciju Xcode projekata dostupne na dan njihovog izdavanja.
+  
+Dobre strane Xcode Servera:
+\begin{easylist}[itemize]
+& jednostavan za poretanje i korištenje
+& uvjek \it{up to date}
+& besplatan za korisnike s Apple Developer akauntom
+& samostalno hostan
+& testiranje na povezanim uređajima
+& vrlo dobro verzioniranje
+\end{easylist}
+
+Loše strane Xcode Servera:
+\begin{easylist}
+& isključivo Xcode projekti
+& ograničena personalizacija 
+\end{easylist}
 
 
 \chapter{Zaključak}
